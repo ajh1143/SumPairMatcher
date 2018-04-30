@@ -1,8 +1,6 @@
-#Write a program that takes two lines as input:
-#-A list of integers separated by spaces
-#-A target integer
-#Then prints out all of the pairs of numbers from the input list that sum to the target integer.
-#Sorts lists so smaller values are shown first
+#Program that accepts a list of integers separated by spaces and a target integer.
+#Prints out all of the pairs of numbers from the input list that sum to the target integer.
+#Sorts lists so smaller values are shown first.
 
 import sys
 import itertools
@@ -21,7 +19,6 @@ combos = list(itertools.combinations(castDigits, 2))
 
 #Create empty list for valid pairs
 pairList = []
-
 #Loop through each pair in combinations, create sum
 for pair in combos:
     summed = pair[0] + pair[1]
